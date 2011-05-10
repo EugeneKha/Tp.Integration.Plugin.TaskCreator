@@ -1,0 +1,18 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" InitialTargets="Clean" DefaultTargets="BuildAndRunUnitTests">
+	<ItemGroup>
+		<TpTaskCreatorSolution Include="$(MSBuildProjectDirectory)\Tp.Integration.Plugin.TaskCreator.sln" />
+	</ItemGroup>
+	
+	<Target Name="BuildSolution">
+		<MSBuild Projects="@(MSBuildProjectDirectory)" Targets="build" Properties="Configuration=Release;" />
+	</Target>
+	
+	<Target Name="Clean">
+		<MSBuild Projects="@(TpTaskCreatorSolution)" Targets="">
+		</MSBuild>
+	</Target>
+	
+	<Target Name="BuildAndRunUnitTests" DependsOnTargets="BuildSolution">
+		<Exec Command="Libs\Testing\Nunit\nunit-console TpTaskCreator.nunit /xml=TpTaskCreator-nunit-results.xml" />
+	</Target>
+</Project>

@@ -1,0 +1,3 @@
+[submodule "Libs"]
+	path = Libs
+	url = https://pogotskaya@github.com/TargetProcess/Tp.Integration.PluginSDK.git

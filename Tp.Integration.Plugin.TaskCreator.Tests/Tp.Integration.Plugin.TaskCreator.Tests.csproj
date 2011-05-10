@@ -31,36 +31,52 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Common.Logging.Log4Net">
-      <HintPath>..\..\..\Libs\Common.Logging.Log4Net.dll</HintPath>
+    <Reference Include="Common.Logging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\log4net\Common.Logging.dll</HintPath>
     </Reference>
-    <Reference Include="log4net">
-      <HintPath>..\..\..\Libs\log4net.dll</HintPath>
+    <Reference Include="Common.Logging.Log4Net, Version=1.2.0.2, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\log4net\Common.Logging.Log4Net.dll</HintPath>
     </Reference>
-    <Reference Include="NBehave.Narrator.Framework">
-      <HintPath>..\..\..\Libs\NBehave\NBehave.Narrator.Framework.dll</HintPath>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\log4net\log4net.dll</HintPath>
     </Reference>
-    <Reference Include="NServiceBus">
-      <HintPath>..\..\..\Libs\NServiceBus\binaries\NServiceBus.dll</HintPath>
+    <Reference Include="Microsoft.Web.Services3">
+      <HintPath>..\Libs\Microsoft.Web.Services3.dll</HintPath>
     </Reference>
-    <Reference Include="NServiceBus.Core">
-      <HintPath>..\..\..\Libs\NServiceBus\binaries\NServiceBus.Core.dll</HintPath>
+    <Reference Include="NBehave.Narrator.Framework, Version=0.5.0.252, Culture=neutral, PublicKeyToken=d421feca0f4a05f6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Testing\NBehave\NBehave.Narrator.Framework.dll</HintPath>
     </Reference>
-    <Reference Include="NServiceBus.Host">
-      <HintPath>..\..\..\Libs\NServiceBus\binaries\NServiceBus.Host.exe</HintPath>
+    <Reference Include="NServiceBus, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\NServiceBus\NServiceBus.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\NServiceBus\NServiceBus.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.Host, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <ExecutableExtension>.exe</ExecutableExtension>
+      <HintPath>..\Libs\NServiceBus\NServiceBus.Host.exe</HintPath>
     </Reference>
     <Reference Include="NServiceBus.ObjectBuilder.StructureMap262">
-      <HintPath>..\..\..\Libs\NServiceBus\binaries\containers\structuremap\NServiceBus.ObjectBuilder.StructureMap262.dll</HintPath>
+      <HintPath>..\Libs\NServiceBus\containers\structuremap\NServiceBus.ObjectBuilder.StructureMap262.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.framework, Version=2.5.7.10213, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+    <Reference Include="nunit.framework, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Libs\NUnit\framework\nunit.framework.dll</HintPath>
+      <HintPath>..\Libs\Testing\nunit.framework.dll</HintPath>
     </Reference>
-    <Reference Include="Rhino.Mocks">
-      <HintPath>..\..\..\Libs\Rhino.Mocks.dll</HintPath>
+    <Reference Include="Rhino.Mocks, Version=3.6.0.0, Culture=neutral, PublicKeyToken=0b3305902db7183f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Testing\Rhino.Mocks.dll</HintPath>
     </Reference>
-    <Reference Include="StructureMap">
-      <HintPath>..\..\..\Libs\StructureMap\StructureMap.dll</HintPath>
+    <Reference Include="StructureMap, Version=2.6.2.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\StructureMap\StructureMap.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -69,23 +85,34 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Tp.Core">
-      <HintPath>..\..\..\Libs\Tp.Core.dll</HintPath>
+    <Reference Include="Tp.Core, Version=2.15.0.15001, Culture=neutral, PublicKeyToken=ee2a1130677e5334, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\TargetProcess\Tp.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Tp.Integration.Messages">
-      <HintPath>..\..\..\Libs\Tp.Integration.Messages.dll</HintPath>
+    <Reference Include="Tp.Integration.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ee2a1130677e5334, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\TargetProcess\Tp.Integration.Messages.dll</HintPath>
     </Reference>
-    <Reference Include="Tp.Integration.Plugin.Common">
-      <HintPath>..\..\..\Libs\Tp.Integration.Plugin.Common.dll</HintPath>
+    <Reference Include="Tp.Integration.Plugin.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ee2a1130677e5334, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\TargetProcess\Tp.Integration.Plugin.Common.dll</HintPath>
     </Reference>
-    <Reference Include="Tp.Integration.Testing.Common">
-      <HintPath>..\..\..\Libs\TargetProcess\Tp.Integration.Testing.Common.dll</HintPath>
+    <Reference Include="Tp.Integration.Plugin.UninstallUtil">
+      <HintPath>..\Libs\TargetProcess\Tp.Integration.Plugin.UninstallUtil.exe</HintPath>
     </Reference>
-    <Reference Include="Tp.Testing.Common.NBehave">
-      <HintPath>..\..\..\Libs\NBehave\Tp.Testing.Common.NBehave.dll</HintPath>
+    <Reference Include="Tp.Integration.Testing.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Testing\TargetProcess\Tp.Integration.Testing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Tp.Service.Proxies">
+      <HintPath>..\Libs\TargetProcess\Tp.Service.Proxies.dll</HintPath>
+    </Reference>
+    <Reference Include="Tp.Testing.Common.NBehave, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ee2a1130677e5334, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Testing\TargetProcess\Tp.Testing.Common.NBehave.dll</HintPath>
     </Reference>
     <Reference Include="Tp.Testing.Common.NUnit">
-      <HintPath>..\..\..\Libs\NUnit\addins\Tp.Testing.Common.NUnit.dll</HintPath>
+      <HintPath>..\Libs\Testing\NUnit\addins\Tp.Testing.Common.NUnit.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -99,6 +126,12 @@
       <Project>{A56E812D-B7D4-43ED-8E66-3825E2792B26}</Project>
       <Name>Tp.Integration.Plugin.TaskCreator</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Libs\Testing\NBehave\languages.yml">
+      <Link>languages.yml</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
