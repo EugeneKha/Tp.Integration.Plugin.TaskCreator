@@ -119,9 +119,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\Libs\Tp.Integration.Plugin.Common.dll.config">
+    <None Include="..\Libs\TargetProcess\Tp.Integration.Plugin.Common.dll.config">
       <Link>Tp.Integration.Plugin.Common.dll.config</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Install.bat">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
